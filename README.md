@@ -1,2 +1,21 @@
-# fix-snap-icon-theme
+# Fix Snap icon theme
+
 Fix the icons of Snap apps to use the ones from your icon theme, like Papirus.
+
+## Usage
+
+When Snap updates, the `.desktop` files are recreated, thus reverting to the basic icons.
+
+You need to run this script when this happens (around once a week).
+
+```bash
+# It needs sudo in order to access to the .desktop files
+sudo ./replace.sh
+
+# If you move the script to a particular folder
+sudo ~/Scripts/replace.sh
+```
+
+## How
+
+It automates the process described in [this solution](https://askubuntu.com/a/1233701), which is to replace the icon path in the Snap apps `.desktop` file to the one from your icon theme.
