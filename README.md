@@ -10,10 +10,10 @@ You need to run this script when this happens (around once a week).
 
 ```bash
 # It needs sudo in order to access to the .desktop files
-sudo ./replace.sh
+sudo ./fix-snap-icon-theme.sh
 
 # If you move the script to a particular folder
-sudo ~/Scripts/replace.sh
+sudo ~/Scripts/fix-snap-icon-theme.sh
 ```
 
 ## How
