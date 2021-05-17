@@ -9,6 +9,9 @@ When Snap updates, the `.desktop` files are recreated, thus reverting to the bas
 You need to run this script when this happens (around once a week).
 
 ```bash
+# Make the script executable 
+chmod u+x fix-snap-icon-theme.sh
+
 # It needs sudo in order to access to the .desktop files
 sudo ./fix-snap-icon-theme.sh
 
